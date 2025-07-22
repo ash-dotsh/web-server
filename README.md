@@ -1,6 +1,6 @@
 # web-server
 
-## A web server built using Go Fiber, Docker, NGINX, and Ubuntu/Debian Linux.
+## A web server built using Go Fiber, Docker, NGINX, and Debian Linux.
 
 ## Security Features
 
