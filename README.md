@@ -42,7 +42,7 @@ Copy all the provided files into their respective directories:
 - `scripts/*.sh` → scripts directory
 - Your `index.html` → `app/static/index.html`
 
-### 3. Configure
+### 3. Configure Environment Variables
 ```bash
 # Copy environment template
 cp .env.example .env
@@ -69,7 +69,7 @@ chmod +x Makefile
 sudo certbot --nginx -d ash.it.com -d www.ash.it.com # IF YOU HAVE YOUR OWN DOMAIN USE IT HERE
 ```
 
-### 6. Additional Security Measures
+### 6. Additional Security
 ```bash
 # Apply system security hardening
 make harden
@@ -85,7 +85,7 @@ make build
 make up
 ```
 
-## Main Branch
+## Main Directory Tree
 ```
 ash-it-server/
 ├── docker-compose.yml          # Main orchestration
@@ -109,7 +109,7 @@ ash-it-server/
     └── security-hardening.sh # System security setup
 ```
 
-## Administrative Commands
+## Rudimentary Administrative Commands
 
 ```bash
 # Development
