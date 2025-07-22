@@ -24,7 +24,7 @@
 - Root/sudo access
 - Domain pointing to your server IP
 
-### 1. Project Setup
+### 1. Initialize Project
 ```bash
 # Create project directory
 mkdir ash-it-server && cd ash-it-server
@@ -33,7 +33,7 @@ mkdir ash-it-server && cd ash-it-server
 mkdir -p nginx/ssl app/middleware app/static scripts
 ```
 
-### 2. File Setup
+### 2. Directory Tree
 Copy all the provided files into their respective directories:
 - `docker-compose.yml` → project root
 - `nginx/Dockerfile` and `nginx/nginx.conf` → nginx directory
@@ -42,7 +42,7 @@ Copy all the provided files into their respective directories:
 - `scripts/*.sh` → scripts directory
 - Your `index.html` → `app/static/index.html`
 
-### 3. Configuration
+### 3. Configure
 ```bash
 # Copy environment template
 cp .env.example .env
@@ -63,10 +63,10 @@ chmod +x Makefile
 ### 5. SSL Certificates
 ```bash
 # For development (self-signed)
-make ssl-cert
+# make ssl-cert
 
 # For production (Let's Encrypt) - run after deployment
-sudo certbot --nginx -d ash.it.com -d www.ash.it.com
+sudo certbot --nginx -d ash.it.com -d www.ash.it.com # IF YOU HAVE YOUR OWN DOMAIN USE IT HERE
 ```
 
 ### 6. Security Hardening
@@ -85,7 +85,7 @@ make build
 make up
 ```
 
-## Project Structure
+## Main Branch
 ```
 ash-it-server/
 ├── docker-compose.yml          # Main orchestration
@@ -147,7 +147,7 @@ CNAME record: www.ash.it.com → ash.it.com
 # - Port 443 (HTTPS) - for production traffic
 ```
 
-### 3. Let's Encrypt SSL
+### 3. Encrypt SSL
 ```bash
 # After deployment with self-signed certs
 sudo certbot --nginx -d ash.it.com -d www.ash.it.com
