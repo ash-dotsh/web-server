@@ -85,7 +85,7 @@ make build
 make up
 ```
 
-## Main Directory Tree
+## Directory Tree
 ```
 ash-it-server/
 ├── docker-compose.yml          # Main orchestration
