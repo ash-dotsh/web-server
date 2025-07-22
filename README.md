@@ -1,6 +1,6 @@
 # web-server
 
-## A web server implementation using Go Fiber, Docker, NGINX, and Debian Linux for the domain ash.it.com.
+## A web server built using Go Fiber, Docker, NGINX, and Ubuntu/Debian Linux.
 
 ## Security Features
 
