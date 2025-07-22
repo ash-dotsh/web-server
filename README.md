@@ -199,7 +199,7 @@ make up
 sudo apt update && sudo apt upgrade
 ```
 
-## 🚨 Security Checklist
+## Security Checklist
 
 ### Pre-deployment
 - [ ] Change all default passwords and secrets in `.env`
