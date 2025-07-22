@@ -33,7 +33,7 @@ mkdir ash-it-server && cd ash-it-server
 mkdir -p nginx/ssl app/middleware app/static scripts
 ```
 
-### 2. Directory Tree
+### 2. Format Main Branch
 Copy all the provided files into their respective directories:
 - `docker-compose.yml` → project root
 - `nginx/Dockerfile` and `nginx/nginx.conf` → nginx directory
