@@ -162,7 +162,7 @@ sudo certbot renew --dry-run
 docker-compose -f docker-compose.prod.yml up -d
 ```
 
-## 📊 Monitoring & Maintenance
+## Monitoring & Maintenance
 
 ### Health Checks
 ```bash
