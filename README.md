@@ -69,13 +69,13 @@ chmod +x Makefile
 sudo certbot --nginx -d ash.it.com -d www.ash.it.com # IF YOU HAVE YOUR OWN DOMAIN USE IT HERE
 ```
 
-### 6. Security Hardening
+### 6. Additional Security Measures
 ```bash
 # Apply system security hardening
 make harden
 ```
 
-### 7. Deploy
+### 7. Launch
 ```bash
 # Build and deploy
 make deploy
@@ -109,7 +109,7 @@ ash-it-server/
     └── security-hardening.sh # System security setup
 ```
 
-## Commands
+## Administrative Commands
 
 ```bash
 # Development
@@ -138,7 +138,7 @@ A record: ash.it.com → YOUR_SERVER_IP
 CNAME record: www.ash.it.com → ash.it.com
 ```
 
-### 2. Firewall Setup
+### 2. Firewall Configuration
 ```bash
 # UFW will be configured by the hardening script
 # Cloud provider security groups should allow:
@@ -156,7 +156,7 @@ sudo certbot --nginx -d ash.it.com -d www.ash.it.com
 sudo certbot renew --dry-run
 ```
 
-### 4. Production Configuration
+### 4. Configure for Production
 ```bash
 # Use production compose file
 docker-compose -f docker-compose.prod.yml up -d
@@ -176,7 +176,7 @@ docker ps
 make logs
 ```
 
-### Security Monitoring
+### Security & Surveilance
 ```bash
 # Check fail2ban status
 sudo fail2ban-client status
@@ -199,7 +199,7 @@ make up
 sudo apt update && sudo apt upgrade
 ```
 
-## Security Checklist
+## Application Safety Checklist
 
 ### Pre-deployment
 - [ ] Change all default passwords and secrets in `.env`
@@ -215,7 +215,7 @@ sudo apt update && sudo apt upgrade
 - [ ] Test backup and recovery procedures
 - [ ] Review access logs for anomalies
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -260,9 +260,6 @@ sudo ufw status verbose
 # Check fail2ban
 sudo fail2ban-client status
 ```
-
-### Security Reporting
-For security vulnerabilities, please contact: security@ash.it.com
 
 ### Performance Issues
 Monitor your application with:
